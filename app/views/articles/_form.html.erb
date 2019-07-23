@@ -1,0 +1,13 @@
+<div class="form">
+  <%= form_for (@article) do |f| %>
+    <div class="sep">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="sep">
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+    </div>
+    <%= f.submit class: "btn" %>
+  <% end %>
+</div>
