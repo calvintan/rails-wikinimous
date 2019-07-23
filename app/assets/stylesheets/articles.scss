@@ -4,28 +4,37 @@
 
 body {
   font-family: sans-serif;
+  line-height: 1.4;
 }
 
 .container {
-  border: 1px solid red;
-  max-width: 960px;
-  padding: 30px;
+  max-width: 740px;
+  padding: 20px;
   margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
 }
 
 .article {
   padding: 20px;
+  border-radius: 4px;
 
-  h2 {
-    font-size: 24px;
+  .article_link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
     margin: 0 0 10px;
+    color: cornflowerblue;
   }
 
   p {
     margin: 0;
+    color: #555;
   }
 
   &:nth-child(2n) {
-    background: #eee;
+    background: #f4f4f4;
   }
 }
