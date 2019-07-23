@@ -12,7 +12,12 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    # find the article and update the article
     @article = Article.find(params[:id])
+    @article.update(article_params)
+    redirect_to @article
+    # @task.save
+    # @task.completed = true
   end
 
   def create
@@ -23,6 +28,8 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article = Article.find(params[:id])
+    @article.destroy
+    redirect_to article_path
   end
 
   def new
